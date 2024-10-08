@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>516</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="Q_close_Button">
+   <property name="geometry">
+    <rect>
+     <x>544</x>
+     <y>10</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>닫기</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>85</y>
+     <width>621</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="year_label">
+   <property name="geometry">
+    <rect>
+     <x>94</x>
+     <y>9</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>년도</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Mission_title_label">
+   <property name="geometry">
+    <rect>
+     <x>163</x>
+     <y>10</y>
+     <width>241</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>분기 선교회계 재정보고서</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Quarter_widget">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>10</y>
+     <width>21</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="bogo_year_widget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>10</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Q_excel_save_Button">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>10</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>엑셀로 저장</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Q_view_Button">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>47</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>수입 지출내역 보기</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="mission_tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>95</y>
+     <width>611</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <column>
+    <property name="text">
+     <string>수입내역</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>금 액</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>지출내역</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>금액</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>195</x>
+     <y>68</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>차기이월</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="next_amount_label">
+   <property name="geometry">
+    <rect>
+     <x>274</x>
+     <y>67</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>70</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>원</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Q_excel_save_Button_2">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>50</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>프린트</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>bogo_year_widget</tabstop>
+  <tabstop>Quarter_widget</tabstop>
+  <tabstop>Q_view_Button</tabstop>
+  <tabstop>Q_excel_save_Button</tabstop>
+  <tabstop>Q_close_Button</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Q_close_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>Quarterly_mission_close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>596</x>
+     <y>16</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>630</x>
+     <y>21</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Q_view_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>Quarterly_mission_view()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>123</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>186</x>
+     <y>42</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Q_excel_save_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>Quarterly_mission_excel_save()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>444</x>
+     <y>19</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>416</x>
+     <y>23</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Q_excel_save_Button_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>print_button_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>515</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>558</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Quarterly_mission_excel_save()</slot>
+  <slot>Quarterly_mission_close()</slot>
+  <slot>Quarterly_mission_view()</slot>
+  <slot>print_button_click()</slot>
+ </slots>
+</ui>

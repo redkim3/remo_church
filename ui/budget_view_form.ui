@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>836</width>
+    <height>655</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>0</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>수입 지출 예산 보기</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>56</y>
+     <width>751</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="budget_view_Button">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>20</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>보기</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="year_label">
+   <property name="geometry">
+    <rect>
+     <x>164</x>
+     <y>40</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>년도</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="budget_year_widget">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>38</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="budget_view_close_Button">
+   <property name="geometry">
+    <rect>
+     <x>674</x>
+     <y>20</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>종료하기</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>34</x>
+     <y>40</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>예산 년도:</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="income_budg_tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>104</y>
+     <width>321</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <column>
+    <property name="text">
+     <string>항</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>목</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>금액</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>비 고</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QTableWidget" name="cost_budg_tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>345</x>
+     <y>104</y>
+     <width>481</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <column>
+    <property name="text">
+     <string>항</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>목</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>세목</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>금액</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>비 고</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>78</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>수입 예산 합계</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="income_budg_hap_widget">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>81</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cost_budg_hap_widget">
+   <property name="geometry">
+    <rect>
+     <x>575</x>
+     <y>80</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>80</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>지출 예산 합계</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="print_Button">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>20</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>프린터</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>budget_year_widget</tabstop>
+  <tabstop>income_budg_tableWidget</tabstop>
+  <tabstop>cost_budg_tableWidget</tabstop>
+  <tabstop>budget_view_Button</tabstop>
+  <tabstop>budget_view_close_Button</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>budget_view_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>budget_view()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>461</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>36</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>budget_view_close_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>budget_view_close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>746</x>
+     <y>29</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>780</x>
+     <y>34</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>budget_view_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>budget_view_2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>502</x>
+     <y>29</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>606</x>
+     <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>print_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>print_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>614</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>689</x>
+     <y>77</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>budget_view()</slot>
+  <slot>budget_view_close()</slot>
+  <slot>budget_view_2()</slot>
+  <slot>print_button_clicked()</slot>
+ </slots>
+</ui>

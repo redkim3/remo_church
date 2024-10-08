@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>701</width>
+    <height>346</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>10</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>발송 이메일 주소 등록</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>21</x>
+     <y>67</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>성  명 :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="email_name_widget">
+   <property name="geometry">
+    <rect>
+     <x>74</x>
+     <y>65</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>64</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>email 주소 :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="email_add_widget">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>65</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="email_list_tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>100</y>
+     <width>331</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <column>
+    <property name="text">
+     <string>성명</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>이메일 주소</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="add_email_list_Button">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>20</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>추가하기</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="email_close_Button">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>300</y>
+     <width>91</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>닫기</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="remove_row_Button">
+   <property name="geometry">
+    <rect>
+     <x>314</x>
+     <y>300</y>
+     <width>131</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>선택행 삭제하기</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="email_save_Button">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>20</y>
+     <width>91</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>저장하기</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="email_append_tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>353</x>
+     <y>100</y>
+     <width>331</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <column>
+    <property name="text">
+     <string>성명</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>이메일 주소</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="email_save_Button_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>20</y>
+     <width>131</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>등록 이메일 보기</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="modify_email_Button">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>300</y>
+     <width>121</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>선택행 수정하기</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>email_name_widget</tabstop>
+  <tabstop>email_add_widget</tabstop>
+  <tabstop>add_email_list_Button</tabstop>
+  <tabstop>email_save_Button</tabstop>
+  <tabstop>email_close_Button</tabstop>
+  <tabstop>remove_row_Button</tabstop>
+  <tabstop>email_append_tableWidget</tabstop>
+  <tabstop>email_list_tableWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>email_close_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>addemail_close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>603</x>
+     <y>310</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>337</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>remove_row_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>remove_row()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>411</x>
+     <y>306</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>358</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>email_save_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>email_save()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>498</x>
+     <y>33</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>477</x>
+     <y>55</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>add_email_list_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>email_append()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>387</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>330</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>email_save_Button_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>registed_email_view()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>591</x>
+     <y>32</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>631</x>
+     <y>64</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>modify_email_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>modify_email()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>139</x>
+     <y>308</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>82</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>addemail_close()</slot>
+  <slot>email_append()</slot>
+  <slot>remove_row()</slot>
+  <slot>email_save()</slot>
+  <slot>registed_email_view()</slot>
+  <slot>modify_email()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Regist_Member</class>
+ <widget class="QDialog" name="Regist_Member">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>614</width>
+    <height>414</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>10</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>성도 검색 및 정보수정</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>검색방법 선택 :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tab_label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>성            명 :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="sungdo_name_widget">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>90</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>36</y>
+     <width>591</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>591</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>591</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="regist_sungdo_tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>131</y>
+     <width>581</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>등록일</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>개인코드</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>성명(동명구분)</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>성명</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>합산코드</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>직분</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>주소</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>비고</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="serch_member_Button">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>12</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>성도검색</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="name_radio_Button">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>60</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>성명</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="hap_code_radio_Button">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>60</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>합산코드</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="close_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>12</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>종료</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="edit_infor_Button">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>52</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>성도 정보 수정</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>90</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>선택된 1행의 정보만 수정 됩니다.</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="code1_radio_Button">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>60</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>개별코드</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>serch_member_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Regist_Member</receiver>
+   <slot>sungdo_view()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>447</x>
+     <y>29</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>15</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>edit_infor_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Regist_Member</receiver>
+   <slot>edit_information()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>468</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>397</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>sungdo_view()</slot>
+  <slot>edit_information()</slot>
+ </slots>
+</ui>

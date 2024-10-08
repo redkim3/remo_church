@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>844</width>
+    <height>327</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>사용자 등록</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>629</x>
+     <y>101</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>등  록  일</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>629</x>
+     <y>131</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>성       명</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>629</x>
+     <y>161</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>I         D </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>192</y>
+     <width>81</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>PassWord</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="name_widget">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>131</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ID_regist_widget">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>161</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="password_widget">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>191</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="reg_date_widget">
+   <property name="geometry">
+    <rect>
+     <x>711</x>
+     <y>100</y>
+     <width>110</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add_user_Button">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>12</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>등록(F12)</string>
+   </property>
+   <property name="shortcut">
+    <string>F12</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save_cancel_Button">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>12</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>종료</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>47</y>
+     <width>821</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>310</y>
+     <width>831</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="user_tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>591</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>55</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>user_id</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>등록일</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>사용자</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>비밀번호</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>일반</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>선교</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>특별</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>헌금내역</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>사용자등록</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>접속상태</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="row_delete_button">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>12</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>선택행 삭제</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="row_edit_button">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>12</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>선택행 수정</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="Ge_checkBox">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>244</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>일반회계</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="sun_checkBox">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>244</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>선교회계</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="spe_checkBox">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>267</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>특별회계</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="hun_detail_checkBox">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>267</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>헌금내역</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="user_checkBox">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>290</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>사용자등록</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>220</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>** 권한등록</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="user_view_button_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>12</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>사용자 보기</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>791</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>*  수정할 때는 반드시 비밀번호도 함께 수정하세요(동일한 번호도 관계 없습니다.)</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>reg_date_widget</tabstop>
+  <tabstop>name_widget</tabstop>
+  <tabstop>ID_regist_widget</tabstop>
+  <tabstop>password_widget</tabstop>
+  <tabstop>Ge_checkBox</tabstop>
+  <tabstop>sun_checkBox</tabstop>
+  <tabstop>spe_checkBox</tabstop>
+  <tabstop>hun_detail_checkBox</tabstop>
+  <tabstop>user_checkBox</tabstop>
+  <tabstop>user_tableWidget</tabstop>
+  <tabstop>row_delete_button</tabstop>
+  <tabstop>row_edit_button</tabstop>
+  <tabstop>add_user_Button</tabstop>
+  <tabstop>save_cancel_Button</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>row_delete_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>row_delete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>359</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>row_edit_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>row_edit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>528</x>
+     <y>29</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>454</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>add_user_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>add_user_save()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>598</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>582</x>
+     <y>32</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>save_cancel_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>close_exit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>681</x>
+     <y>28</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>664</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>user_view_button_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>user_review()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>225</x>
+     <y>27</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>add_user_save()</slot>
+  <slot>close_exit()</slot>
+  <slot>row_delete()</slot>
+  <slot>row_edit()</slot>
+  <slot>user_review()</slot>
+ </slots>
+</ui>
